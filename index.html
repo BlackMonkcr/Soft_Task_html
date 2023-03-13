@@ -12,116 +12,161 @@
     <title>Soft Task</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div id="logo-name" class="left">
-                <a href="#"><ul>
+<div class="principal-container">
+    <article>
+        <header>
+            <nav>
+                <div id="logo-name" class="left">
+                    <a href="#"><ul>
+                            <li>
+                                <img src="./img/logo.png" alt="logo" height="30px">
+                            </li>
+                            <li>
+                                <span>Soft Notes</span>
+                            </li>
+                        </ul></a>
+                </div>
+
+                <div id="nav-bar" class="left">
+                    <ul>
+                        <a href="#"><li>Home</li></a>
+                        <a href="#"><li>Board</li></a>
+                        <a href="#"><li>Add Task</li></a>
+                        <a href="#"><li>Contact</li></a>
+                        <a href="#"><li>Log Out</li></a>
+                    </ul>
+                </div>
+
+                <div id="perfil" class="right">
+                    <ul>
                         <li>
-                            <img src="./img/logo.png" alt="logo" height="30px">
+                            <img src="./img/foto-perfil.png" alt="photo-perfil-image" height="35px">
+                        </li>
+                        <li class="text">
+                            <span>BlackMonk</span>
                         </li>
                         <li>
-                            <span>Soft Notes</span>
+                            <div class="triangle"></div>
                         </li>
-                     </ul></a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <section id="home">
+
+            <div id="figures">
+                <img src="./img/points-repeated.png" alt="circle-grid-repetead-1" class="point-grid">
+                <img src="./img/points-repeated.png" alt="circle-grid-repetead-2" class="point-grid">
+                <img src="./img/points-repeated.png" alt="circle-grid-repetead-3" class="point-grid">
+                <img src="./img/triangle-1.png" alt="triangle-type-1" class="triangle-type-1">
+                <img src="./img/triangle-1.png" alt="triangle-type-1" class="triangle-type-1">
+                <img src="./img/triangle-2.png" alt="triangle-type-2" class="triangle-type-2">
             </div>
 
-            <div id="nav-bar" class="left">
-                <ul>
-                    <a href="#"><li>Home</li></a>
-                    <a href="#"><li>Board</li></a>
-                    <a href="#"><li>Add Task</li></a>
-                    <a href="#"><li>Contact</li></a>
-                    <a href="#"><li>Log Out</li></a>
-                </ul>
+            <div id="welcome">
+                <div class="title">
+                    <span>Welcome!</span>
+                    <span class="resaltado">BlackMonk</span>
+                    <button type="button">Create Board</button>
+                </div>
             </div>
 
-            <div id="perfil" class="right">
-                <ul>
-                    <li>
-                        <img src="./img/foto-perfil.png" alt="photo-perfil-image" height="35px">
-                    </li>
-                    <li class="text">
-                        <span>BlackMonk</span>
-                    </li>
-                    <li>
-                        <div class="triangle"></div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    
-    <section id="home">
+        </section>
 
-        <div id="figures">
-            <img src="./img/points-repeated.png" alt="circle-grid-repetead-1" class="point-grid">
-            <img src="./img/points-repeated.png" alt="circle-grid-repetead-2" class="point-grid">
-            <img src="./img/points-repeated.png" alt="circle-grid-repetead-3" class="point-grid">
-            <img src="./img/triangle-1.png" alt="triangle-type-1" class="triangle-type-1">
-            <img src="./img/triangle-1.png" alt="triangle-type-1" class="triangle-type-1">
-            <img src="./img/triangle-2.png" alt="triangle-type-2" class="triangle-type-2">
-        </div>
+        <section id="benefits">
 
-        <div id="welcome">
             <div class="title">
-                <span>Welcome!</span>
-                <span class="resaltado">BlackMonk</span>
-                <button type="button">Create Board</button>
+
+                <span>What Can I do With</span>
+                <span>
+                    <span class="resaltado">Soft Notes</span> ?
+                </span>
+                
             </div>
+
+            <div class="cards">
+
+                <div class="card">
+                    <span class="resaltado">Keep Your Notes Always At Hand</span>
+                    <img src="./icons/icon-web.png" alt="icon-web" height="30px">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and type industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span class="resaltado">Save Your Notes As You Like</span>
+                    <img src="./icons/icon-fav.png" alt="icon-web">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and type industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span class="resaltado">Be More Efficient With Your Time</span>
+                    <img src="./icons/icon-clock.png" alt="icon-web">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and type industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span class="resaltado">Create Your Own Shared Workspaces</span>
+                    <img src="./icons/icon-group.png" alt="icon-web">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and type industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contact-me">
+
+            <div class="form">
+                
+                <form action="/submit-form" method="post">
+
+                    <div class="itemform">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="itemform">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="itemform">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit">Send</button>
+
+                </form>
+            </div>
+
+            <div class="title">
+                <span>Do you have</span>
+                <span>any questions?</span>
+                <br>
+                <span>Write here to help you!</span>
+            </div>
+        
+        </section>
+
+        <div id="footer">
+            <ul>
+                <li><p>Copyright - Derechos reservados 2023</p></li>
+            </ul>
         </div>
 
-    </section>
+    </article>
 
-    <section id="benefits">
-
-        <div class="title">
-
-            <span>What Can I do With</span>
-            <span>
-                <span class="resaltado">Soft Notes</span> ?
-            </span>
-            
-        </div>
-
-        <div class="cards">
-
-            <div class="card">
-                <span class="resaltado">Keep Your Notes Always At Hand</span>
-                <img src="./icons/icon-web.png" alt="icon-web" height="30px">
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and type industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                </p>
-            </div>
-
-            <div class="card">
-                <span class="resaltado">Save Your Notes As You Like</span>
-                <img src="./icons/icon-fav.png" alt="icon-web">
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and type industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                </p>
-            </div>
-
-            <div class="card">
-                <span class="resaltado">Be More Efficient With Your Time</span>
-                <img src="./icons/icon-clock.png" alt="icon-web">
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and type industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                </p>
-            </div>
-
-            <div class="card">
-                <span class="resaltado">Create Your Own Shared Workspaces</span>
-                <img src="./icons/icon-group.png" alt="icon-web">
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and type industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="contact-me">
-    </section>
+    
+</div>
 </body>
 </html>
